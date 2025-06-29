@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .site-header {
+    background: #003366;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .hero {
+    padding: 3rem 0;
+    background: #f4f7fa;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #005fa3;
+  }
+  
+  .features, .how-it-works {
+    background: #ffffff;
+    padding: 2rem 0;
+  }
+  
+  .features h2, .how-it-works h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #003366;
+  }
+  
+  .features ul {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .features li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .features li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: green;
+  }
+  
+  .how-it-works ol {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+  }
+  
+  .site-footer {
+    background: #222;
+    color: #ccc;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .site-footer a {
+    color: #ccc;
+    text-decoration: underline;
+  }
+  

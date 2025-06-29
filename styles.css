@@ -13,10 +13,31 @@ body {
   }
   
   .site-header {
-    background: #003366;
-    color: white;
-    padding: 1rem 0;
-  }
+  background: #1c3242; /* Updated background color */
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-button {
+  background-color: #f6f0e4;
+  color: #ea673e;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #e0d9cc;
+}
+
   
   .logo {
     font-size: 1.6rem;

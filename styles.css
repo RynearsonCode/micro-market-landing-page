@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     color: #333;
-    background-color: #fff;
+    background-color: #f6f0e4;
   }
   
   .container {
@@ -12,11 +12,16 @@ body {
     padding: 1rem;
   }
   
-  .site-header {
-  background: #1c3242; /* Updated background color */
-  color: white;
+.site-header {
+  background-color: transparent;
   padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
+
 
 .header-flex {
   display: flex;
@@ -44,12 +49,31 @@ body {
     font-weight: bold;
   }
   
-  .hero {
-    padding: 3rem 0;
-    background: #f4f7fa;
-    text-align: center;
-  }
-  
+
+.hero {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-bottom-left-radius: 100% 30%;
+  border-bottom-right-radius: 100% 30%;
+  background: url('images/mm.png') no-repeat center center;
+  background-size: cover;
+  background-color: #f6f0e4; /* fallback */
+  padding: 0; /* Remove top/bottom padding since we are centering */
+}
+
+
+  .hero h1,
+.hero h2,
+.hero p,
+.header img,
+.header a{
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* improves text readability */
+}
   .hero h1 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
@@ -60,11 +84,28 @@ body {
     max-width: 700px;
     margin: 0 auto 2rem;
   }
+  /*Overlay for better contrast*/
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-bottom-left-radius: 100% 30%;
+  border-bottom-right-radius: 100% 30%;
+  background: rgba(0, 0, 0, 0.4); /* optional overlay for contrast */
+  z-index: 0;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
   
   .cta-button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background: #0077cc;
+    background: #1c3242;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -75,22 +116,28 @@ body {
     background: #005fa3;
   }
   
-  .features, .how-it-works {
-    background: #ffffff;
+  .features {
     padding: 2rem 0;
   }
   
-  .features h2, .how-it-works h2 {
+  .features h2{
     text-align: center;
     margin-bottom: 1rem;
     color: #003366;
   }
+
+  .features a,.cta-btn {
+    padding-top:20px;
+  text-align: center;
+}
+
   
   .features ul {
     list-style: none;
     padding: 0;
-    max-width: 700px;
+    max-width: 400px;
     margin: 0 auto;
+    text-align:left;
   }
   
   .features li {
@@ -101,9 +148,10 @@ body {
   
   .features li::before {
     content: "✔";
-    position: absolute;
-    left: 0;
-    color: green;
+    /*position: absolute;
+    left: 0;*/
+    padding-right:15px;
+    color: #ea6f46;
   }
   
   .how-it-works ol {
@@ -137,4 +185,6 @@ body {
     margin-bottom: 2rem;
   }
   
-  
+  .DqBBlb::after {
+  display: none;
+}

@@ -7,34 +7,56 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header" style="background-color:#f6f0e4">
+  <header class="site-header" style="background-color:#f6f0e4;height:50px;">
   <div class="container header-flex">
     <div class="logo"><img src="images/logo.png" width="auto" height="100"></div>
     <a href="index.html" class="cta-button">Home</a>
   </div>
 </header>
 
-  <section class="form-section">
+  <section class="form-section" style="margin-top:150px;">
     <div class="container">
       <h1>Let's Get Started</h1>
       <p>Fill out the quick form below and we’ll be in touch with more information about bringing a Micro Market to your location.</p>
-      <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfmFH4sruWh6vWMCWB3tTeSnqpHWRVqlFXA0rjVez7uEtx0yA/viewform?embedded=true" 
-        width="100%" 
-        height="700" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">
-        Loading…
-      </iframe>
+      <!-- modify this form HTML and place wherever you want your form -->
+      <form action="https://formspree.io/f/meoknerd" method="POST" class="contact-form">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="company">Company:</label>
+    <input type="text" id="company" name="company">
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="message">How can we help:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+
+  <button type="submit" class="submit-button">Send</button>
+</form>
+
     </div>
   </section>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="contact">
     <div class="container">
-      <p>📞 719-481-6669 | ✉️ sam@mountainpeakservices.com</p>
       <p><a href="https://mountainpeakservices.com">mountainpeakservices.com</a></p>
+      <p>&copy; 2025 Mountain Peak Services. All rights reserved.</p>
     </div>
   </footer>
 </body>
+
 </html>
